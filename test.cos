@@ -1,0 +1,10 @@
+
+require("stfn")
+
+Process.sleep(1000)
+
+Console.require()
+Console.printl("Hello World!")
+Console.release()
+
+Process.exit(0)

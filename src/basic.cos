@@ -1,0 +1,2 @@
+def require(lib_name): syscall(141, lib_name)
+def require_dll(dll_name): syscall(401, dll_name)

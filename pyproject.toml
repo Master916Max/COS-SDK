@@ -1,0 +1,13 @@
+[project]
+name = "cos-sdk"
+version = "0.1.0"
+description = "The Software Development Kit for the CoreOS Kernel"
+readme = "README.md"
+authors = [
+    { name = "Max Hammer", email = "hma52366@outlook.de" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+cos-sdk = "cos_sdk:main"

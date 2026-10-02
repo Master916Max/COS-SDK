@@ -1,0 +1,21 @@
+from collections.abc import Callable
+
+# Provided by the COS runtime.
+syscall = Callable[[int, object], object]
+
+class Console:
+    def require_tui():syscall(301)
+    def unlock_tui():syscall(302)
+    def print(text):syscall(303,text)
+    def printl(text):syscall(304,text)
+    def read_c() -> str: return syscall(321)
+    def read_l() -> str: return syscall(322)
+
+class FileSystem:
+    pass
+
+class Process:
+    def sleep(ms): syscall(909, ms)
+    def require(lib_name): syscall(141, lib_name)
+    def require_dll(dll_name): syscall(401, dll_name)
+
